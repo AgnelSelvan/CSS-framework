@@ -1,0 +1,101 @@
+$primary-color: #444;
+$secondary-color: rgba(140, 20, 252, 1);
+$accent-color: #e65100;
+$textAlignment: (
+  "left": left,
+  "center": center,
+  "right": right,
+  "justify": justify
+);
+$textDecoration: (
+  "none": none,
+  "uline": underline,
+  "oline": overline,
+  "unset": unset
+);
+$flexDirection: (
+  "row": row,
+  "col": column,
+  "row-rev": row-reverse,
+  "col-rev": column-reverse
+);
+$justifyContent: (
+  "fs": flex-start,
+  "c": center,
+  "fe": flex-end,
+  "sb": space-between,
+  "se": space-evenly,
+  "sa": space-around
+);
+$alignItems: (
+  "fs": flex-start,
+  "c": center,
+  "fe": flex-end,
+  "sb": space-between,
+  "se": space-evenly,
+  "sa": space-around
+);
+$alignSelf: (
+  "fs": flex-start,
+  "c": center,
+  "fe": flex-end,
+  "b": baseline
+);
+$colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "accent": $accent-color,
+  "white": white,
+  "black": black
+);
+$borderWidths: (
+  "0": 0px,
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px
+);
+$marginPaddingPix: (
+    "0": 0,
+    "1": 1rem,
+    "2": 2rem,
+    "3": 3rem,
+    "4": 4rem,
+    "sm": 0.5rem,
+    "lg": 5rem,
+    "auto": auto
+  )
+  @function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+@mixin mediaXs {
+  @media screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+@mixin mediaSm {
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (min-width: 678px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

@@ -1,0 +1,155 @@
+@include mediaXs {
+  .container {
+    width: 95%;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  @each $name, $val in $flexDirection {
+    .xs-flex-#{$name} {
+      flex-direction: $val;
+    }
+  }
+  @each $name, $val in $justifyContent {
+    .xs-jc#{$name} {
+      justify-content: $val;
+    }
+  }
+  @each $name, $val in $alignItems {
+    .xs-ai#{$name} {
+      align-items: $val;
+    }
+  }
+  @each $name, $val in $alignSelf {
+    .xs-as#{$name} {
+      align-self: $val;
+    }
+  }
+}
+@include mediaSm {
+  .container {
+    width: 90%;
+  }
+  .sm-d-none {
+    display: none;
+  }
+  .sm-d-flex {
+    display: flex;
+  }
+  @each $name, $val in $flexDirection {
+    .sm-flex-#{$name} {
+      flex-direction: $val;
+    }
+  }
+  @each $name, $val in $justifyContent {
+    .sm-jc#{$name} {
+      justify-content: $val;
+    }
+  }
+  @each $name, $val in $alignItems {
+    .sm-ai#{$name} {
+      align-items: $val;
+    }
+  }
+  @each $name, $val in $alignSelf {
+    .sm-as#{$name} {
+      align-self: $val;
+    }
+  }
+}
+@include mediaMd {
+  .container {
+    width: 80%;
+  }
+  .md-d-none {
+    display: none;
+  }
+  .md-d-flex {
+    display: flex;
+  }
+  @each $name, $val in $flexDirection {
+    .md-flex-#{$name} {
+      flex-direction: $val;
+    }
+  }
+  @each $name, $val in $justifyContent {
+    .md-jc#{$name} {
+      justify-content: $val;
+    }
+  }
+  @each $name, $val in $alignItems {
+    .md-ai#{$name} {
+      align-items: $val;
+    }
+  }
+  @each $name, $val in $alignSelf {
+    .md-as#{$name} {
+      align-self: $val;
+    }
+  }
+}
+@include mediaLg {
+  .container {
+    width: 75%;
+  }
+  .lg-d-none {
+    display: none;
+  }
+  .lg-d-flex {
+    display: flex;
+  }
+  @each $name, $val in $flexDirection {
+    .lg-flex-#{$name} {
+      flex-direction: $val;
+    }
+  }
+  @each $name, $val in $justifyContent {
+    .lg-jc#{$name} {
+      justify-content: $val;
+    }
+  }
+  @each $name, $val in $alignItems {
+    .lg-ai#{$name} {
+      align-items: $val;
+    }
+  }
+  @each $name, $val in $alignSelf {
+    .lg-as#{$name} {
+      align-self: $val;
+    }
+  }
+}
+@include mediaXL {
+  html {
+    font-size: 20px;
+  }
+  .container {
+    width: 70%;
+  }
+  .xl-d-none {
+    display: none;
+  }
+  .xl-d-flex {
+    display: flex;
+  }
+  @each $name, $val in $flexDirection {
+    .xl-flex-#{$name} {
+      flex-direction: $val;
+    }
+  }
+  @each $name, $val in $justifyContent {
+    .xl-jc#{$name} {
+      justify-content: $val;
+    }
+  }
+  @each $name, $val in $alignItems {
+    .xl-ai#{$name} {
+      align-items: $val;
+    }
+  }
+  @each $name, $val in $alignSelf {
+    .xl-as#{$name} {
+      align-self: $val;
+    }
+  }
+}
